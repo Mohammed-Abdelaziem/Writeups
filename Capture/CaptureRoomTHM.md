@@ -1,4 +1,5 @@
 # TryHackMe: Basic Pentesting Writeup
+![image](https://github.com/user-attachments/assets/81fe147f-34f9-4d27-821c-6f3e36752afd)
 
 **Room Link:** [Basic Pentesting](https://tryhackme.com/room/basicpentestingjt)  
 **Difficulty:** Easy  
