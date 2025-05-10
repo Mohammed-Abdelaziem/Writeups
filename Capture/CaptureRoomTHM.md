@@ -1,6 +1,3 @@
-Here's your TryHackMe writeup properly formatted in Markdown (`.md`) syntax:
-
-```markdown
 # TryHackMe: Basic Pentesting Writeup
 
 **Room Link:** [Basic Pentesting](https://tryhackme.com/room/basicpentestingjt)  
@@ -87,16 +84,5 @@ Found in `/root/root.txt` after further enumeration.
 
 ---
 
-🔗 **More Writeups:** [My GitHub Security Writeups](https://github.com/yourusername/security-writeups)
+🔗 **More Writeups:** [My GitHub Security Writeups](https://github.com/Mohammed-Abdelaziem/Writeups)
 ```
-
-### Key Markdown Features Used:
-1. **Headers** (`#`, `##`, `###`) for structure
-2. **Code blocks** (```) for commands and outputs
-3. **Bold text** (`** **`) for emphasis
-4. **Lists** (`-`) for findings and lessons
-5. **Links** (`[text](url)`) for references
-6. **Tags** (backticks) for hashtags
-7. **Emojis** for visual cues
-
-This format will render perfectly on GitHub/GitLab and most Markdown viewers. Would you like me to add any additional sections like screenshots or alternative methods?
