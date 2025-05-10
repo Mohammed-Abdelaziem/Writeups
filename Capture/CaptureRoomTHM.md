@@ -85,4 +85,3 @@ Found in `/root/root.txt` after further enumeration.
 ---
 
 🔗 **More Writeups:** [My GitHub Security Writeups](https://github.com/Mohammed-Abdelaziem/Writeups)
-```
