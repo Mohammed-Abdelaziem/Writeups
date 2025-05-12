@@ -49,15 +49,19 @@ Certificate Validity: 2022-03-13 to 2023-03-13 (Expired)
 
 Result:
 
+![image](https://github.com/user-attachments/assets/c277ca0c-6b86-4e55-8ea8-4026262c5de7)
+
 
 Lets see Certificate first before continuing:
 
-![image](https://github.com/user-attachments/assets/04c0938f-3cd1-4d26-9594-f0f1c997e190)
+![image](https://github.com/user-attachments/assets/688c71ea-6692-4367-a4a2-fa4a9b92a605)
+
 
 Have DNS Lets add it to local host and open it in new tab and BOOM:
 
+![442798695-04c0938f-3cd1-4d26-9594-f0f1c997e190](https://github.com/user-attachments/assets/ce464e83-aa2b-4942-bdbe-4ebdb567fdb0)
 
-
+# Flag Found
 ## Lessons Learned
 
 
