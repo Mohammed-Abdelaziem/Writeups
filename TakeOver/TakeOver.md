@@ -14,55 +14,72 @@
 
 ## Reconnaissance
 
-### Nmap Scan
+
+
 ```bash
 nmap -sV -A -T4 <TARGET_IP>
-```
-## Open Ports and Services
-Ports Open:
+````
 
-22/tcp: SSH (OpenSSH 8.2p1 Ubuntu 4ubuntu0.4)
+### Open Ports and Services
 
-80/tcp: HTTP (Apache httpd 2.4.41 (Ubuntu))
+|   Port  | Service |              Version              |
+| :-----: | :-----: | :-------------------------------: |
+|  22/tcp |   SSH   | OpenSSH 8.2p1 (Ubuntu 4ubuntu0.4) |
+|  80/tcp |   HTTP  |    Apache httpd 2.4.41 (Ubuntu)   |
+| 443/tcp |  HTTPS  |    Apache httpd 2.4.41 (Ubuntu)   |
 
-443/tcp: HTTPS (Apache httpd 2.4.41 (Ubuntu))
+### Additional Information:
 
-Additional Information:
-SSH Host Keys were gathered (RSA, ECDSA, ED25519).
+* SSH host keys (RSA, ECDSA, ED25519) were collected.
+* Port 80 redirected to HTTPS (`https://futurevera.thm/`).
+* The SSL certificate details on port 443:
 
-HTTP title on port 80 indicated a redirect to HTTPS (https://futurevera.thm/).
+  * **Common Name:** `futurevera.thm`
+  * **Organization:** Futurevera
+  * **Location:** Oregon, US
+  * **Validity:** Expired (2022-03-13 to 2023-03-13)
 
-HTTPS (port 443) presented an SSL certificate with:
+---
 
-Common Name: futurevera.thm
+## Exploring the Website
 
-Organization: Futurevera
+From the room description, hints suggested the development of a **Support** section and a **Blog**.
+I added common subdomains (like `support.futurevera.thm` and `blog.futurevera.thm`) to my `/etc/hosts` file.
 
-Location: Oregon, US
+Result after visiting:
 
-Certificate Validity: 2022-03-13 to 2023-03-13 (Expired)
+![Subdomains Result](https://github.com/user-attachments/assets/c277ca0c-6b86-4e55-8ea8-4026262c5de7)
 
+---
 
-##I thinked of what was Written that he is building “Support” also he writes “Blogs” so lets see them 
-#first added them:
+## SSL Certificate Insights
 
+Before proceeding further, I reviewed the SSL certificate:
 
-Result:
+![SSL Certificate](https://github.com/user-attachments/assets/688c71ea-6692-4367-a4a2-fa4a9b92a605)
 
-![image](https://github.com/user-attachments/assets/c277ca0c-6b86-4e55-8ea8-4026262c5de7)
+---
 
+## DNS Discovery and Adding to Hosts
 
-Lets see Certificate first before continuing:
+After discovering the DNS records, I added them to my local `/etc/hosts` file. Upon visiting the new domain...
 
-![image](https://github.com/user-attachments/assets/688c71ea-6692-4367-a4a2-fa4a9b92a605)
+**BOOM! Access achieved:**
 
+![Access Success](https://github.com/user-attachments/assets/ce464e83-aa2b-4942-bdbe-4ebdb567fdb0)
 
-Have DNS Lets add it to local host and open it in new tab and BOOM:
+---
 
-![442798695-04c0938f-3cd1-4d26-9594-f0f1c997e190](https://github.com/user-attachments/assets/ce464e83-aa2b-4942-bdbe-4ebdb567fdb0)
+## 🎯 Flag Found!
 
-# Flag Found
-## Lessons Learned
+---
+
+## 📚 Lessons Learned
+
+* Always explore SSL certificates for potential subdomains.
+* Pay attention to small hints in web pages (like "Support" and "Blogs").
+* Subdomain enumeration and manual DNS mapping are critical skills in reconnaissance.
+* Expired certificates and misconfigured DNS entries can lead to critical findings.
 
 
 ---
