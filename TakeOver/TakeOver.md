@@ -12,7 +12,7 @@
 **Room Link:** [TakeOver](https://tryhackme.com/room/takeover)
   **Difficulty:** Easy  
 
-## 1. Reconnaissance
+## Reconnaissance
 
 ### Nmap Scan
 ```bash
@@ -42,13 +42,23 @@ Location: Oregon, US
 
 Certificate Validity: 2022-03-13 to 2023-03-13 (Expired)
 
-### Web Enumeration
+
+##I thinked of what was Written that he is building “Support” also he writes “Blogs” so lets see them 
+#first added them:
 
 
-## 2. Exploitation
+Result:
 
 
-## 4. Lessons Learned
+Lets see Certificate first before continuing:
+
+![image](https://github.com/user-attachments/assets/04c0938f-3cd1-4d26-9594-f0f1c997e190)
+
+Have DNS Lets add it to local host and open it in new tab and BOOM:
+
+
+
+## Lessons Learned
 
 
 ---
