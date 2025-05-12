@@ -10,7 +10,7 @@
 
 
 **Room Link:** [TakeOver](https://tryhackme.com/room/takeover)
-**Difficulty:** Easy  
+  **Difficulty:** Easy  
 
 ## 1. Reconnaissance
 
